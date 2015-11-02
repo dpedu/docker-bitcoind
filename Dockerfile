@@ -11,7 +11,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 ADD bitcoin.conf /home/crypto/bitcoin.conf
-ADD supervisor-bitcoin.conf /etc/supervisor/conf.d/bitcoin.conf
+ADD bitcoind.conf /etc/supervisor/conf.d/bitcoind.conf
 
 VOLUME /home/crypto/bitcoin/
 EXPOSE 8332 8333

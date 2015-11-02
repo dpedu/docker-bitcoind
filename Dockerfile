@@ -16,4 +16,4 @@ ADD supervisor-bitcoin.conf /etc/supervisor/conf.d/bitcoin.conf
 VOLUME /home/crypto/bitcoin/
 EXPOSE 8332 8333
 
-CMD supervisord
+ENTRYPOINT supervisord
